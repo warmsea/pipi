@@ -698,6 +698,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
 
+"@types/lodash@^4.14.182":
+  version "4.14.182"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.182.tgz#05301a4d5e62963227eaafe0ce04dd77c54ea5c2"
+  integrity sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==
+
 "@types/node@*":
   version "18.7.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.1.tgz#352bee64f93117d867d05f7406642a52685cbca6"
@@ -822,10 +827,15 @@
   resolved "https://registry.yarnpkg.com/@warmsea/cl/-/cl-0.6.1.tgz#5805a22872583e888b8baa3e202201d7de79e10d"
   integrity sha512-fZek9FbL2uocK/5q1zciH45RcU/Y+0ETYXCBOU5UNdkjCRCIr0DUWk0h3BbunrfTIVJH/ja/jOiLRtmNRJ19Kw==
 
-"@warmsea/o@^0.0.14":
-  version "0.0.14"
-  resolved "https://registry.yarnpkg.com/@warmsea/o/-/o-0.0.14.tgz#01ebd7158ee553cd69ea395c190d6ad58c356b26"
-  integrity sha512-i2jj9cBnh7FBPNEwnn5slwRAD0rECL3Wnmcl7Zf6MojjM6riQaOUbrjsp7KSQJuGDwQM0IPd8kdwEP6Itd7dUA==
+"@warmsea/cl@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@warmsea/cl/-/cl-0.7.0.tgz#873c6ffbe18113300be8d0ee9fbcb1a60686409c"
+  integrity sha512-/ourj+J2RXBdmnrMJkasrcCpSKu+uLP89PV8XGhvkLOFWNO1jdtkt5AJaK3VXgO8p09eiyxpbNxZ9fbRKM2txw==
+
+"@warmsea/o@^0.0.13":
+  version "0.0.13"
+  resolved "https://registry.yarnpkg.com/@warmsea/o/-/o-0.0.13.tgz#458645ef856620a1866c6aa131f33b6ea3d92446"
+  integrity sha512-TOhTvLtjmDj783P5kRwKC7Hd68EKNz4LPvxxwPvExYyIe5edIv6oZhbGWMG82Xuz3rtfK73oGvlq/w+L9c9X0Q==
   dependencies:
     "@teamsupercell/typings-for-css-modules-loader" "^2.5.1"
     "@typescript-eslint/eslint-plugin" "^5.14.0"
