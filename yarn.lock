@@ -832,10 +832,10 @@
   resolved "https://registry.yarnpkg.com/@warmsea/cl/-/cl-0.7.0.tgz#873c6ffbe18113300be8d0ee9fbcb1a60686409c"
   integrity sha512-/ourj+J2RXBdmnrMJkasrcCpSKu+uLP89PV8XGhvkLOFWNO1jdtkt5AJaK3VXgO8p09eiyxpbNxZ9fbRKM2txw==
 
-"@warmsea/o@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@warmsea/o/-/o-0.0.13.tgz#458645ef856620a1866c6aa131f33b6ea3d92446"
-  integrity sha512-TOhTvLtjmDj783P5kRwKC7Hd68EKNz4LPvxxwPvExYyIe5edIv6oZhbGWMG82Xuz3rtfK73oGvlq/w+L9c9X0Q==
+"@warmsea/o@^0.0.15":
+  version "0.0.15"
+  resolved "https://registry.yarnpkg.com/@warmsea/o/-/o-0.0.15.tgz#26759207c4e30a437f2b05649b0b758e5397df8a"
+  integrity sha512-9tsiE3OAkJfNPXvAvXR2fWldGiVJKUDEj1F7Hhm4zsdDhvbPv+2LlQ2YSUPITaUwy6Rl6WmK58oGDmPm31JWNw==
   dependencies:
     "@teamsupercell/typings-for-css-modules-loader" "^2.5.1"
     "@typescript-eslint/eslint-plugin" "^5.14.0"

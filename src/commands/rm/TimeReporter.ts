@@ -1,14 +1,15 @@
 import { WalkerEntry } from "@warmsea/cl";
-import { debounce, DebouncedFunc } from "lodash";
+import { throttle, DebouncedFunc } from "lodash";
 import { Reporter } from "./Reporter";
 
 export class TimeReporter implements Reporter {
   private dirRemoved = 0;
   private filesRemoved = 0;
-  private debouncedPrint: DebouncedFunc<() => void>;
+  private throttleWait = 5000;
+  private throttledPrint: DebouncedFunc<() => void>;
 
   constructor() {
-    this.debouncedPrint = debounce(this.printStatus, 5000);
+    this.throttledPrint = throttle(this.printStatus, this.throttleWait, { leading: false });
   }
 
   public onStart(path: string): void {
@@ -17,16 +18,16 @@ export class TimeReporter implements Reporter {
 
   public onRemovedDir(_entry: WalkerEntry): void {
     this.dirRemoved++;
-    this.debouncedPrint();
+    this.throttledPrint();
   }
 
   public onRemovedFile(_entry: WalkerEntry): void {
     this.filesRemoved++;
-    this.debouncedPrint();
+    this.throttledPrint();
   }
 
   public onEnd(_path: string): void {
-    this.debouncedPrint.cancel();
+    this.throttledPrint.cancel();
     this.printStatus();
   }
 
